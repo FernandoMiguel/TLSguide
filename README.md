@@ -51,6 +51,15 @@ SSL/TLS Workshop/Reference Guide
 
 ## Let's Encrypt
 
+## ACME protocol challenges options
+
+- standalone
+- webroot
+- apache
+- nginx
+- manual (http-01, DNS-01)
+
+
 ### API rate limits
 - https://letsencrypt.org/docs/rate-limits/
 #### LE Production API
@@ -75,7 +84,7 @@ SSL/TLS Workshop/Reference Guide
 - https://github.com/Neilpang/acme.sh/wiki
 - https://github.com/Neilpang/acme.sh/blob/master/dnsapi/README.md
 
-##### DNS-01
+### DNS-01
 - 
 
 
