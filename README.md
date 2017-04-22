@@ -1,4 +1,4 @@
-# TLSguide
+# TLS guide
 SSL/TLS Workshop/Reference Guide
 
 
@@ -52,16 +52,21 @@ SSL/TLS Workshop/Reference Guide
 - https://letsmonitor.org/
 - https://www.ssllabs.com/ssltest/
 
-### Scott Helme
-- https://scotthelme.co.uk/
-- https://report-uri.io/
-- https://securityheaders.io/
 
 #### brew
 - https://github.com/nabla-c0d3/sslyze
 - https://testssl.sh/
 
 
+### Scott Helme
+- https://scotthelme.co.uk/
+- https://report-uri.io/
+- https://securityheaders.io/
 
 
 
+
+
+## Auxiliar 
+- https://cloud-images.ubuntu.com/locator/ec2/
+- https://brew.sh/
