@@ -7,9 +7,10 @@ SSL/TLS Workshop/Reference Guide
 
 
 ## Reference URLs
+### mozilla vhost generator
 - https://mozilla.github.io/server-side-tls/ssl-config-generator/?server=nginx-1.10.1&openssl=1.0.1e&hsts=yes&profile=modern
 
-###
+### Let's Encrypt
 - https://letsencrypt.org/
 - https://letsencrypt.org/docs/
 - https://letsencrypt.org/docs/client-options/
