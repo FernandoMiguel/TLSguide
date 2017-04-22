@@ -7,8 +7,11 @@ SSL/TLS Workshop/Reference Guide
 
 
 ## Reference URLs
+
+
 ### mozilla vhost generator
-- https://mozilla.github.io/server-side-tls/ssl-config-generator/?server=nginx-1.10.1&openssl=1.0.1e&hsts=yes&profile=modern
+- https://mozilla.github.io/server-side-tls/ssl-config-generator/?profile=modern
+
 
 ### Let's Encrypt
 - https://letsencrypt.org/
@@ -24,13 +27,16 @@ SSL/TLS Workshop/Reference Guide
 - The Duplicate Certificate limit is 30,000 per week.
 - The Failed Validations limit will be 60 per hour.
 
+
 ### CLoudflare
 - https://www.cloudflare.com
+
 
 ### AWS
 - https://aws.amazon.com/certificate-manager/faqs/
 - https://aws.amazon.com/cloudfront/
 - https://aws.amazon.com/elasticloadbalancing/applicationloadbalancer/
+
 
 ### acme.sh
 - https://acme.sh
