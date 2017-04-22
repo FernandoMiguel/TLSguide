@@ -82,10 +82,10 @@ SSL/TLS Workshop/Reference Guide
 - https://acme.sh
 - https://github.com/Neilpang/acme.sh
 - https://github.com/Neilpang/acme.sh/wiki
-- https://github.com/Neilpang/acme.sh/blob/master/dnsapi/README.md
 
 ### DNS-01
 - 
+- https://github.com/Neilpang/acme.sh/blob/master/dnsapi/README.md
 
 
 ## Auxiliar 
