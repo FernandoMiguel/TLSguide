@@ -1,6 +1,4 @@
-# TLS guide
-SSL/TLS Workshop/Reference Guide
-
+# SSL/TLS Reference Guide
 
 ## Knowledge Base
 
