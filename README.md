@@ -46,13 +46,13 @@ SSL/TLS Workshop/Reference Guide
 - https://www.ssllabs.com/ssltest/
 
 ### Scott Helme
-https://scotthelme.co.uk/
-https://report-uri.io/
-https://securityheaders.io/
+- https://scotthelme.co.uk/
+- https://report-uri.io/
+- https://securityheaders.io/
 
 #### brew
-https://github.com/nabla-c0d3/sslyze
-https://testssl.sh/
+- https://github.com/nabla-c0d3/sslyze
+- https://testssl.sh/
 
 
 
