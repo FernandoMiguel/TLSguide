@@ -18,16 +18,6 @@ SSL/TLS Workshop/Reference Guide
 ### Let's Encrypt
 - https://letsencrypt.org/
 - https://letsencrypt.org/docs/
-- https://letsencrypt.org/docs/client-options/
-- https://letsencrypt.org/docs/rate-limits/
-#### LE Production API
-- The main limit is Certificates per Registered Domain (20 per week). 
-- limit of 100 Names per Certificate (SAN)
-- a maximum of 500 Accounts per IP Address per 3 hours
-#### LE Staging API
-- The Certificates per Registered Domain limit is 30,000 per week.
-- The Duplicate Certificate limit is 30,000 per week.
-- The Failed Validations limit will be 60 per hour.
 
 
 ### CLoudflare
@@ -61,7 +51,20 @@ SSL/TLS Workshop/Reference Guide
 
 ## Let's Encrypt
 
+### API rate limits
+- https://letsencrypt.org/docs/rate-limits/
+#### LE Production API
+- The main limit is Certificates per Registered Domain (20 per week). 
+- A limit of 100 Names per Certificate (SAN)
+- A maximum of 500 Accounts per IP Address per 3 hours
+#### LE Staging API
+- The Certificates per Registered Domain limit is 30,000 per week.
+- The Duplicate Certificate limit is 30,000 per week.
+- The Failed Validations limit will be 60 per hour.
+
+
 ### LE clients
+- https://letsencrypt.org/docs/client-options/
 
 #### Certbot
 - https://certbot.eff.org/about/
