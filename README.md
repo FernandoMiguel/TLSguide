@@ -51,7 +51,8 @@ A certificate authority is an entity which issues digital certificates to organi
 Certification authorities have to keep detailed records of what has been issued and the information used to issue it, and are audited regularly to make sure that they are following defined procedures. Every certification authority provides a Certification Practice Statement (CPS) that defines the procedures that will be used to verify applications. There are many commercial CAs that charge for their services (VeriSign). Institutions and governments may have their own CAs, and there are also free Certificate Authorities.
 
 
-Every certificate authority has different products, prices, SSL certificate features, and levels of customer satisfaction. Learn more about choosing a certificate provider or read our SSL Certificate reviews to find the best provider to purchase from.
+Every certificate authority has different products, prices, SSL certificate features, and levels of customer satisfaction.
+
 
 ## Root Certificate Store
 
