@@ -43,6 +43,47 @@ A typically flow would be the following:
 - The server and client encrypt all further traffic using the symmetric key
 - At the end of the session the symmetric key is discarded
 
+
+## What is a certificate authority (CA)?
+A certificate authority is an entity which issues digital certificates to organizations or people after validating them. 
+
+
+Certification authorities have to keep detailed records of what has been issued and the information used to issue it, and are audited regularly to make sure that they are following defined procedures. Every certification authority provides a Certification Practice Statement (CPS) that defines the procedures that will be used to verify applications. There are many commercial CAs that charge for their services (VeriSign). Institutions and governments may have their own CAs, and there are also free Certificate Authorities.
+
+
+Every certificate authority has different products, prices, SSL certificate features, and levels of customer satisfaction. Learn more about choosing a certificate provider or read our SSL Certificate reviews to find the best provider to purchase from.
+
+## Root Certificate Store
+
+- https://certsimple.com/blog/control-the-ssl-cas-your-browser-trusts
+
+The browser you're using right now trusts a bunch of certificate authorities. Which bunch of certificate authorities - properly called a 'root certificate store' - is determined by your OS and browser
+
+The major root certificate stores are Apple, Microsoft, Mozilla, and Android. When you visit a website, the website presents a certificate that's signed by another certificate, which is signed by another certificate, until you reach one of the certificates in the store you're using.
+
+
+Each certificate store has its own requirements for a certificate authority to get added. However they all require certificate authorities to pass WebTrust for Certification Authorities, an audited assurance process for the policies and procedures for verifying identity, issuing certificates, handling keys, and more.
+
+
+Occasionally CAs violate the WebTrust requirements: the Chinese government (CNNIC) and Symantec both recently issued fake certificates for google.com. In CNNIC's case, they gave their private key to a third party that issued the fake certificate. CNNIC was removed from the Android and Mozilla root stores, but the Microsoft root store - used by Chrome on Windows and Edge on Windows - only revoked the misissued certificates. Symantec's case was less severe: an accidental, but still troubling, misissuance: in this case the root stores kept their certificates and the employees responsible were fired.
+
+
+## Google's Certificate Transparency project
+
+- https://www.certificate-transparency.org/
+
+Certificate Transparency aims to remedy these certificate-based threats by making the issuance and existence of SSL certificates open to scrutiny by domain owners, CAs, and domain users. Specifically, Certificate Transparency has three main goals:
+- Make it impossible (or at least very difficult) for a CA to issue a SSL certificate for a domain without the certificate being visible to the owner of that domain.
+- Provide an open auditing and monitoring system that lets any domain owner or CA determine whether certificates have been mistakenly or maliciously issued.
+- Protect users (as much as possible) from being duped by certificates that were mistakenly or maliciously issued.
+
+
+##
+
+
+##
+
+
 ## Knowledge Base
 
 ###  acme protocol
@@ -146,7 +187,6 @@ When using the dns plugin, LE client will ask you to place a TXT DNS record with
 - https://brew.sh/
 
 ## ToDo
-- CA
 - wildcard
 - SAN
 - Revoking
