@@ -1,7 +1,7 @@
 # SSL/TLS Reference Guide
 
 ## Overview
--- https://www.sslshopper.com/what-is-ssl.html
+- https://www.sslshopper.com/what-is-ssl.html
 ### What is SSL?
 SSL stands for Secure Sockets Layer, an encryption technology that was originally created by Netscape in the 1990s. SSL creates an encrypted connection between your web server and your visitors' web browser allowing for private information to be transmitted without the problems of eavesdropping, data tampering, and message forgery.
 
