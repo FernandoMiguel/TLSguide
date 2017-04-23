@@ -1,7 +1,9 @@
 # SSL/TLS Reference Guide
 
 ## Overview
+
 - https://www.sslshopper.com/what-is-ssl.html
+
 ### What is SSL?
 SSL stands for Secure Sockets Layer, an encryption technology that was originally created by Netscape in the 1990s. SSL creates an encrypted connection between your web server and your visitors' web browser allowing for private information to be transmitted without the problems of eavesdropping, data tampering, and message forgery.
 
@@ -18,7 +20,7 @@ SSL and TLS generally mean the same thing. TLS 1.0 was created by RFC 2246 in Ja
 
 Most people are familiar with the term SSL so that is usually the term that is used when the system is using the newer TLS protocol.
 
-## SSL Basics
+### Secure Socket Layer (SSL)
 - https://gist.github.com/leommoore/da79ce0931a5471304d9
 
 Secure Socket Layer (SSL) is a mechanism to allow information to be securely communicated. Specifically, it is a cryptographic protocol that enables two parties such as a web server and a browser to exchange information securely by encrypting it before sending and decrypting it upon receipt. It is based on the X.509 standards.
@@ -105,7 +107,7 @@ The webroot plugin works by creating a temporary file for each of your requested
 Note that to use the webroot plugin, your server must be configured to serve files from hidden directories. If /.well-known is treated specially by your webserver configuration, you might need to modify the configuration to ensure that files inside /.well-known/acme-challenge are served by the webserver.
 - apache
 - nginx
-- manual (http-01, DNS-01)
+- manual (http-01, [DNS-01](#dns-01))
 If you’d like to obtain a cert running certbot on a machine other than your target webserver or perform the steps for domain validation yourself, you can use the manual plugin.
 
 The manual plugin can use either the http or the dns challenge.
@@ -149,6 +151,7 @@ When using the dns plugin, LE client will ask you to place a TXT DNS record with
 - SAN
 - Revoking
 - HSTS
+
 
 ## Contributing
 
