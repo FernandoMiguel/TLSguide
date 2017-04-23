@@ -152,7 +152,7 @@ Be aware that inclusion in the preload list cannot easily be undone. Domains can
 - https://scotthelme.co.uk/ocsp-stapling-speeding-up-ssl/
 
 ### Certificate Revocation List (CRL) 
-ToDO
+ToDo
 
 ##
 
