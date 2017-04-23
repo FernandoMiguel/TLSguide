@@ -1,5 +1,29 @@
 # SSL/TLS Reference Guide
 
+
+## SSL Basics
+- https://gist.github.com/leommoore/da79ce0931a5471304d9
+
+Secure Socket Layer (SSL) is a mechanism to allow information to be securely communicated. Specifically, it is a cryptographic protocol that enables two parties such as a web server and a browser to exchange information securely by encrypting it before sending and decrypting it upon receipt. It is based on the X.509 standards.
+
+
+Symmetric and Asymmetric Encryption Encrypting and decrypting requires a secret like a password, which is known as a key. There are two types of key, symmetric and asymmetric. If a symmetric key is used it means that the same key is used to encrypt and decrypt the message. Asymmetric keys consist of a private and public key. The message sender encrypts the message using their private (secret) key and the message receiver can decrypt the message using the senders public key.
+
+
+Asymmetric keys require more processing resources than symmetric keys. The problem is that to communicate using symmetric keys both parties have to have the symmetric keys first and the question is how to transfer the symmetric key securely. SSL resolves this problem by using a asymmetric key to transfer the symmetric key and then use the symmetric key for the rest of the session.
+
+
+A typically flow would be the following:
+
+- The client (web browser) connects to the https website
+- The server sends its SSL Certificate (public key) to the client
+- The client validates the certificate
+- The client generates a random symmetric key and encrypts it using the public key in the Certificate
+- The client sends the encrypted symmetric key to the server
+- The server uses its private key to decrypt the symmetric key
+- The server and client encrypt all further traffic using the symmetric key
+- At the end of the session the symmetric key is discarded
+
 ## Knowledge Base
 
 ###  acme protocol
