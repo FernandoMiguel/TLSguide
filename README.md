@@ -165,15 +165,9 @@ ToDo
 ## [Let's Encrypt](./Docs/LetsEncrypt.md)
 
 
-##
 
 
-##
 
-
-## Auxiliar 
-- https://cloud-images.ubuntu.com/locator/ec2/
-- https://brew.sh/
 
 ## ToDo
 - Revoking
