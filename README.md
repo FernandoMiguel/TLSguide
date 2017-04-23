@@ -112,11 +112,33 @@ A SAN certificate may also be called a Unified Communication Certificate (or UCC
 - https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
 - https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet
 - https://www.chromium.org/hsts
-- https://scotthelme.co.uk/hsts-preloading/
+
+If a web site accepts a connection through HTTP and redirects to HTTPS, the user in this case may initially talk to the non-encrypted version of the site before being redirected, if, for example, the user types http://www.foo.com/ or even just foo.com.
+
+
+This opens up the potential for a man-in-the-middle attack, where the redirect could be exploited to direct a user to a malicious site instead of the secure version of the original page.
+
+
+The HTTP Strict Transport Security header lets a web site inform the browser that it should never load the site using HTTP and should automatically convert all attempts to access the site using HTTP to HTTPS requests instead.
+
+
+The first time your site is accessed using HTTPS and it returns the Strict-Transport-Security header, the browser records this information, so that future attempts to load the site using HTTP will automatically use HTTPS instead.
+
+
+When the expiration time specified by the Strict-Transport-Security header elapses, the next attempt to load the site via HTTP will proceed as normal instead of automatically using HTTPS.
+
+```
+Strict-Transport-Security: max-age=<expire-time>
+Strict-Transport-Security: max-age=<expire-time>; includeSubDomains
+Strict-Transport-Security: max-age=<expire-time>; preload
+```
 
 ### HSTS Preloading
 - https://hstspreload.org/
 - https://cs.chromium.org/chromium/src/net/http/transport_security_state_static.json
+- https://scotthelme.co.uk/hsts-preloading/
+
+Google maintains an HSTS preload service. By following the guidelines and successfully submitting your domain, browsers will never connect to your domain using an insecure connection. While the service is hosted by Google, all browsers have stated an intent to use (or actually started using) the preload list.
 
 
 #### Removal
