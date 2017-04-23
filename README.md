@@ -108,9 +108,21 @@ It’s also quite common to encounter a limit on the number of names per certifi
 A SAN certificate may also be called a Unified Communication Certificate (or UCC),a multi-domain certificates or an Exchange certificate.
 
 
+## HTTP Strict-Transport-Security (HSTS)
+- https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
+- https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet
+- https://www.chromium.org/hsts
+- https://scotthelme.co.uk/hsts-preloading/
 
-##
+### HSTS Preloading
+- https://hstspreload.org/
+- https://cs.chromium.org/chromium/src/net/http/transport_security_state_static.json
 
+
+#### Removal
+- https://hstspreload.org/#removal
+
+Be aware that inclusion in the preload list cannot easily be undone. Domains can be removed, but it takes months for a change to reach users with a Chrome update and we cannot make guarantees about other browsers. Don't request inclusion unless you're sure that you can support HTTPS for your **entire site and all its subdomains** the long term.
 
 
 ##
@@ -222,7 +234,7 @@ When using the dns plugin, LE client will ask you to place a TXT DNS record with
 
 ## ToDo
 - Revoking
-- HSTS
+- stapled OCSP
 
 
 ## Contributing
