@@ -31,6 +31,7 @@ Symmetric and Asymmetric Encryption Encrypting and decrypting requires a secret 
 
 Asymmetric keys require more processing resources than symmetric keys. The problem is that to communicate using symmetric keys both parties have to have the symmetric keys first and the question is how to transfer the symmetric key securely. SSL resolves this problem by using a asymmetric key to transfer the symmetric key and then use the symmetric key for the rest of the session.
 
+
 ### Connection Flow
 A typically flow would be the following:
 
@@ -84,7 +85,7 @@ A wildcard certificate allows for unlimited subdomains to be protected with a si
 
 ### Multi-level Wildcard Certificate
 
-Although a few CAs will issue certificates for multi-level subdomains (ex *.*.example.com) no modern browser supports them.
+Although a few CAs will issue certificates for multi-level subdomains (ex \*.\*.example.com) no modern browser supports them.
 
 ## Subject Alternative Name (SAN) Certificate
 
