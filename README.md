@@ -107,7 +107,7 @@ For example, it’s common practice to disallow arbitrary wildcard names as SAN 
 It’s also quite common to encounter a limit on the number of names per certificate. The common practice is to set a limit of up to 100 names per certificate.
 
 
-A SAN certificate may also be called a Unified Communication Certificate (or UCC),a multi-domain certificates or an Exchange certificate.
+A SAN certificate may also be called a Unified Communication Certificate (or UCC), a multi-domain certificates or an Exchange certificate.
 
 
 ## HTTP Strict-Transport-Security (HSTS)
@@ -146,7 +146,7 @@ Google maintains an HSTS preload service. By following the guidelines and succes
 #### Removal
 - https://hstspreload.org/#removal
 
-Be aware that inclusion in the preload list cannot easily be undone. Domains can be removed, but it takes months for a change to reach users with a Chrome update and we cannot make guarantees about other browsers. Don't request inclusion unless you're sure that you can support HTTPS for your **entire site and all its subdomains** the long term.
+Be aware that inclusion in the preload list cannot easily be undone. Domains can be removed, but it takes months for a change to reach users with a Chrome update and Google cannot make guarantees about other browsers. Don't request inclusion unless you're sure that you can support HTTPS for your **entire site and all its subdomains** the long term.
 
 
 #### When things go **really** wrong
