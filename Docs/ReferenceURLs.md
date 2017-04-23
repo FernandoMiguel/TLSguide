@@ -31,7 +31,7 @@
 - https://www.ssllabs.com/ssltest/
 
 
-#### brew
+#### [brew](https://brew.sh/)
 - https://github.com/nabla-c0d3/sslyze
 - https://testssl.sh/
 
@@ -40,3 +40,8 @@
 - https://scotthelme.co.uk/
 - https://report-uri.io/
 - https://securityheaders.io/
+
+
+## Auxiliar 
+- https://cloud-images.ubuntu.com/locator/ec2/
+- https://brew.sh/
