@@ -14,8 +14,9 @@ To enable SSL on a website, you will need to get an SSL Certificate that identif
 If SSL is properly deployed, the information transmitted between the web browser and the web server (whether it is contact or credit card information), is encrypted and only seen by the organization that owns the website.
 
 
-### SSL vs. TLS
+### SSL vs TLS
 SSL and TLS generally mean the same thing. TLS 1.0 was created by RFC 2246 in January 1999 as the next version of SSL 3.0.
+TLS stands for Transport Layer Security.
 
 
 Most people are familiar with the term SSL so that is usually the term that is used when the system is using the newer TLS protocol.
