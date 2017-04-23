@@ -160,9 +160,9 @@ ToDo
 ##
 
 
-## [Reference URLs](./Docs/ReferenceURLs)
+## [Reference URLs](/Docs/ReferenceURLs)
 
-## [Let's Encrypt](./Docs/LetsEncrypt)
+## [Let's Encrypt](/Docs/LetsEncrypt)
 
 
 ## Auxiliar 
