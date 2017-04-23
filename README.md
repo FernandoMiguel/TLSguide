@@ -146,6 +146,13 @@ Google maintains an HSTS preload service. By following the guidelines and succes
 
 Be aware that inclusion in the preload list cannot easily be undone. Domains can be removed, but it takes months for a change to reach users with a Chrome update and we cannot make guarantees about other browsers. Don't request inclusion unless you're sure that you can support HTTPS for your **entire site and all its subdomains** the long term.
 
+## Online Certificate Status Protocol (OCSP Stapling)
+- https://www.digicert.com/enabling-ocsp-stapling.htm
+- https://www.digitalocean.com/community/tutorials/how-to-configure-ocsp-stapling-on-apache-and-nginx
+- https://scotthelme.co.uk/ocsp-stapling-speeding-up-ssl/
+
+### Certificate Revocation List (CRL) 
+ToDO
 
 ##
 
@@ -256,7 +263,6 @@ When using the dns plugin, LE client will ask you to place a TXT DNS record with
 
 ## ToDo
 - Revoking
-- stapled OCSP
 
 
 ## Contributing
