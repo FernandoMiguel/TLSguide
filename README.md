@@ -1,5 +1,22 @@
 # SSL/TLS Reference Guide
 
+## Overview
+-- https://www.sslshopper.com/what-is-ssl.html
+### What is SSL?
+SSL stands for Secure Sockets Layer, an encryption technology that was originally created by Netscape in the 1990s. SSL creates an encrypted connection between your web server and your visitors' web browser allowing for private information to be transmitted without the problems of eavesdropping, data tampering, and message forgery.
+
+
+To enable SSL on a website, you will need to get an SSL Certificate that identifies you and install it on your web server. 
+
+
+If SSL is properly deployed, the information transmitted between the web browser and the web server (whether it is contact or credit card information), is encrypted and only seen by the organization that owns the website.
+
+
+### SSL vs. TLS
+SSL and TLS generally mean the same thing. TLS 1.0 was created by RFC 2246 in January 1999 as the next version of SSL 3.0.
+
+
+Most people are familiar with the term SSL so that is usually the term that is used when the system is using the newer TLS protocol.
 
 ## SSL Basics
 - https://gist.github.com/leommoore/da79ce0931a5471304d9
@@ -12,7 +29,7 @@ Symmetric and Asymmetric Encryption Encrypting and decrypting requires a secret 
 
 Asymmetric keys require more processing resources than symmetric keys. The problem is that to communicate using symmetric keys both parties have to have the symmetric keys first and the question is how to transfer the symmetric key securely. SSL resolves this problem by using a asymmetric key to transfer the symmetric key and then use the symmetric key for the rest of the session.
 
-
+### Connection Flow
 A typically flow would be the following:
 
 - The client (web browser) connects to the https website
@@ -126,6 +143,12 @@ When using the dns plugin, LE client will ask you to place a TXT DNS record with
 - https://cloud-images.ubuntu.com/locator/ec2/
 - https://brew.sh/
 
+## ToDo
+- CA
+- wildcard
+- SAN
+- Revoking
+- HSTS
 
 ## Contributing
 
