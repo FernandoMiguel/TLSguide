@@ -77,6 +77,41 @@ Certificate Transparency aims to remedy these certificate-based threats by makin
 - Provide an open auditing and monitoring system that lets any domain owner or CA determine whether certificates have been mistakenly or maliciously issued.
 - Protect users (as much as possible) from being duped by certificates that were mistakenly or maliciously issued.
 
+## Wildcard Certificate
+
+A wildcard certificate allows for unlimited subdomains to be protected with a single certificate. For example, you could use a wildcard certificate for the domain name example.com and that cert would also work for mail.example.com, ftp.example.com and any other subdomain. The wildcard refers to the fact that the cert is provisioned for *.example.com.
+
+### Multi-level Wildcard Certificate
+
+Although a few CAs will issue certificates for multi-level subdomains (ex *.*.example.com) no modern browser supports them.
+
+## Subject Alternative Name (SAN) Certificate
+
+- https://support.dnsimple.com/articles/what-is-ssl-san/
+
+The Subject Alternative Name (SAN) is an extension to the X.509 specification that allows to specify additional host names for a single SSL certificate.
+
+### What is a SAN Certificate
+
+In practice, when using the term SAN certificates, we are referring to an SSL certificate that has the ability to cover multiple host names (domains), also called multi-domain SSL certificate.
+
+
+There is no specific limitation on the host names you can cover by a SAN extension, besides the requirement to be syntactically valid host names (further details are available in the RFC). However, certificate authorities may impose further limitations on number or formats based on internal rules or business decisions.
+
+
+For example, it’s common practice to disallow arbitrary wildcard names as SAN host names. This means SAN certificates generally support only an enumeration of names.
+
+
+It’s also quite common to encounter a limit on the number of names per certificate. The common practice is to set a limit of up to 100 names per certificate.
+
+
+A SAN certificate may also be called a Unified Communication Certificate (or UCC),a multi-domain certificates or an Exchange certificate.
+
+
+
+##
+
+
 
 ##
 
@@ -86,11 +121,10 @@ Certificate Transparency aims to remedy these certificate-based threats by makin
 
 ## Knowledge Base
 
+## Reference URLs
+
 ###  acme protocol
 - http://ietf-wg-acme.github.io/acme/
-
-
-## Reference URLs
 
 
 ### mozilla vhost generator
@@ -187,8 +221,6 @@ When using the dns plugin, LE client will ask you to place a TXT DNS record with
 - https://brew.sh/
 
 ## ToDo
-- wildcard
-- SAN
 - Revoking
 - HSTS
 
