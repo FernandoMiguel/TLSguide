@@ -28,6 +28,7 @@
 - https://crt.sh/
 - https://developers.facebook.com/tools/ct/
 - https://letsmonitor.org/
+- https://sslmate.com/
 - https://www.ssllabs.com/ssltest/
 
 
