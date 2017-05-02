@@ -29,7 +29,10 @@
 - https://developers.facebook.com/tools/ct/
 - https://letsmonitor.org/
 - https://sslmate.com/
+
+### Testing
 - https://www.ssllabs.com/ssltest/
+- https://www.hardenize.com/
 
 
 #### [brew](https://brew.sh/)
