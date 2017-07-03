@@ -162,8 +162,8 @@ Be aware that inclusion in the preload list cannot easily be undone. Domains can
 ### Certificate Revocation List (CRL) 
 ToDo
 
-##
-
+### Revoking
+- https://arstechnica.com/security/2017/07/https-certificate-revocation-is-broken-and-its-time-for-some-new-tools/
 
 ##
 
@@ -171,14 +171,6 @@ ToDo
 ## [Reference URLs](./Docs/ReferenceURLs.md)
 
 ## [Let's Encrypt](./Docs/LetsEncrypt.md)
-
-
-
-
-
-
-## ToDo
-- Revoking
 
 
 ## Contributing
